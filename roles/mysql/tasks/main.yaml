@@ -1,4 +1,4 @@
-- name: confgure mysql server
+- name: configure mysql server
   hosts: mysql
   become: yes
   vars:

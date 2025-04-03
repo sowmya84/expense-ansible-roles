@@ -13,6 +13,7 @@
   include_role:
     name: common
     task_from: main
+    
 # - name: delete html directory
 #   ansible.builtin.file:
 #     path: /usr/share/nginx/html

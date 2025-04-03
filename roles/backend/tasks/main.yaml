@@ -40,6 +40,8 @@
 #     dest: /app     
 
 - name: Install dependencies
+  tags: 
+  - deployment
   community.general.npm:
     path: /app
 

@@ -17,6 +17,8 @@
     name: expense
 
 - name: include from common role
+  tags: 
+  - deployment
   include_role:
     name: common
     tasks_from: main
@@ -64,6 +66,8 @@
     target: /app/schema/backend.sql
 
 - name: daemon reload and restart service 
+  tags: 
+  - deployment
   ansible.builtin.service:
     enabled: true
     state: restarted
